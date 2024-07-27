@@ -1,0 +1,12 @@
+La Asincronia se da cuando el JavaScript entrega funciones al navegador 
+para que el las ejecute mientras JavaScrip se sigue ejecuntando con normalida y esto se da en paralelo, 
+cuando el navegador termina de ejecutar lo que le corresponde pone lo que termino en una bandeja de espera, 
+llamada Callback queue endonde el codigo ejecutado esperara su turno para pasar al call Stack y mostrar 
+lo que ejecuto el navegador, antes de motrarse en el callstack interviene algo llamado event loop 
+quien es el encargado de preguntarle al call stack si se encuentra vacio para empezarle a pasar lo 
+que tiene en el callback queue, si el callstack esta ocupado pues seguirán esperando en el callback queue 
+y si esta vacio empezara a recibir esas funciones.
+
+Si el callstack no esta vacion JavaScrip nunca empezara a recibir las funciones que se encuentran en el Callback 
+queue y precisamente el event loop es el encargado de validar si el callstack esta vacio o no para asi generar 
+la conexion entre el callstack y el callback queue.

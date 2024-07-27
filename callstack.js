@@ -12,7 +12,7 @@ calcular();
 
 
 
-El Call Stack es un mecanismo para que un intérprete realice un seguimiento
+/*El Call Stack es un mecanismo para que un intérprete realice un seguimiento
 de su lugar en un script que llama a múltiples funciones: qué función se está 
 ejecutando actualmente y qué funciones se invocan desde esa función, etc.
 
@@ -22,4 +22,4 @@ Cualquier función llamada por esa función se agrega a la pila de llamadas más
 y se ejecuta donde se alcanzan sus llamadas.
 Cuando finaliza la función actual, el intérprete la quita de la pila y reanuda la 
 ejecución donde la dejó en la última lista de códigos. 
-Si la pila ocupa más espacio del que le había asignado, se produce un error de "desbordamiento de pila".
+Si la pila ocupa más espacio del que le había asignado, se produce un error de "desbordamiento de pila".*/
